@@ -1,5 +1,8 @@
 {{$NEXT}}
 
+Overview of changes in Glib::IO 0.002 [2021-06-24]
+==================================================
+
 * Fix examples in SYNOPSIS section in doc
 * Add 'Test::More' as a TestRequires dependency
 * RT#134851 Generate files for file-enumerator.t; thanks to Michal Josef
