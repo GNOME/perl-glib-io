@@ -14,8 +14,7 @@ Glib::IO - Perl bindings to the GIO library
   # Synchronous I/O
   $cur_dir = Glib::IO::File::new_for_path('.');
   $enumerator = $cur_dir->enumerate_children('standard::*', [], undef);
-  $file_info = $enumerator->next_file(undef);
-  while ($next_file) {
+  while ($file_info = $enumerator->next_file(undef)) {
       say 'Path: ' + $file_info->get_name();
   }
 
@@ -28,7 +27,7 @@ Glib::IO - Perl bindings to the GIO library
       say 'Can read:  ' + $info->get_attribute_boolean('access::can-read');
       say 'Can write: ' + $info->get_attribute_boolean('access::can-write');
       $loop->quit();
-  }
+  });
   $loop->run();
 
   # Platform API
