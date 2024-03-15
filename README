@@ -29,8 +29,8 @@ and the following Perl modules:
 BUG REPORTS
 -----------
 
-Please report bugs to the gnome-perl product in GNOME's Bugzilla:
-<http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-perl>
+Please report bugs to the perl-glib-io product in GNOME's bugtracker:
+https://gitlab.gnome.org/GNOME/perl-glib-io/-/issues
 
 
 COPYRIGHT AND LICENSE
